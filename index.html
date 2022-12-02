@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Note Manager</title>
+  </head>
+  <body class="theme">
+    <h1 class="logo"><span>< ></span> <span>JS</span> <span>#</span></h1>
+
+    <div class="wrapper">
+      <header>
+        <h2 id="heading">Note Manager</h2>
+        <form action="" id="search-note">
+          <input type="text" placeholder="Search Note..." />
+        </form>
+      </header>
+
+      <div class="note-list" id="note-list">
+        <ul id="list"></ul>
+      </div>
+
+      <div id="hide-list">
+        <label for="hide" onclick="hideNote()">Hide Note</label>
+        <input type="checkbox" id="hide" />
+      </div>
+
+      <div id="add-notes">
+        <form action="" id="add">
+          <input type="text" placeholder="Add Note" id="add-input" />
+          <button type="submit" id="add-btn">+</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <h3>M.Siddhesh</h3>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
