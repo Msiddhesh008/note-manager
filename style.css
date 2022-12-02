@@ -57,7 +57,7 @@ header #search-note input {
 }
 
 header #search-note input::placeholder {
-  color: var(--font-color);
+  color: grey;
 }
 
 .note-list {
