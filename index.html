@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Note Manager</title>
-  </head>
-  <body class="theme">
-    <h1 class="logo"><span>< ></span> <span>JS</span> <span>#</span></h1>
-
-    <div class="wrapper">
-      <header>
-        <h2 id="heading">Note Manager</h2>
-        <form action="" id="search-note">
-          <input type="text" placeholder="Search Note..." />
-        </form>
-      </header>
-
-      <div class="note-list" id="note-list">
-        <ul id="list"></ul>
-      </div>
-
-      <div id="hide-list">
-        <label for="hide" onclick="hideNote()">Hide Note</label>
-        <input type="checkbox" id="hide" />
-      </div>
-
-      <div id="add-notes">
-        <form action="" id="add">
-          <input type="text" placeholder="Add Note" id="add-input" />
-          <button type="submit" id="add-btn">+</button>
-        </form>
-      </div>
+    <link rel="icon" type="image/x-icon" href="/images/pngwing.com (5).png">
+</head>
+<body>
+        <label for="panel">
+      <img src="images/colorPalletApple.png" class="themePanel" alt="" srcset="" / ></label>
+      <input type="checkbox" id="panel" style="display: none;" />
+    <div class="wrapper"> 
+        <header>
+            <h2 id="heading"><img src="images/pngwing.com (5).png" alt="" srcset="" class=""/>Note Manager</h2>
+            <form action="" id="search-note">
+                <input type="text" placeholder="Search Note..."> 
+            </form>
+        </header>
+        <div class="note-list" >
+            <ul style=" margin-top: 8px; margin-bottom: 0px;" class="ul-anime">
+                <li class="anime" >
+                    <p ><span class="auto-type" id="data"></span></p>
+                    <p><span class="edit-notes" ><img src="images/editNote.png" alt="" srcset="" /></span>
+                        <span class="close"><img src="images/closeNote.png" alt="" srcset="" class="closeImg"/><span></p>
+                        <input type="text" class="edit-note">
+                        <img src="images/pin.png" alt="" srcset="" class="pin">
+                </li>
+            </ul>
+            <ul id="list">
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sint reiciendis perspiciatis totam iste 
+                        neque sed tempore, ut qui expedita culpa eveniet unde dolorum quaerat iusto repellat officia molestias 
+                        reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eveniet ipsa aspernatur porro, 
+                        sint fugit tenetur cum natus, quam distinctio atque magni tempore, voluptas exercitationem consectetur 
+                        perspiciatis beatae nesciunt est?</p>
+                    <p><span class="edit-notes" ><img src="images/editNote.png" alt="" srcset=""/></span>
+                        <span class="close"><img src="images/closeNote.png" alt="" srcset="" class="closeImg"/><span></p>
+                        <input type="text" class="edit-note">
+                        <img src="images/pin.png" alt="" srcset="" class="pin">
+                </li>
+                <li>
+                    <p>Third note</p>
+                    <p><span class="edit-notes" ><img src="images/editNote.png" alt="" srcset=""/></span>
+                        <span class="close"><img src="images/closeNote.png" alt="" srcset="" class="closeImg"/><span></p>
+                        <input type="text" class="edit-note">
+                        <img src="images/pin.png" alt="" srcset="" class="pin">
+                </li>  
+            </ul>
+        </div>
+        <div id="hide-list">
+            <label for="hide"> <img src="images/up.png" alt="" srcset=""/></label>
+            <input type="checkbox" id="hide">
+        </div>
+        <div id="add-notes">
+            <form action="" id="add">
+                <input type="text" placeholder="Add Note.." id="add-input">
+                <input type="submit" value="+" id="add-btn"> 
+            </form>
+        </div>
     </div>
-
-    <footer>
-      <h3>M.Siddhesh</h3>
-    </footer>
-  </body>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"> </script>
+</body>
+<script src="script.js"></script>
 </html>
